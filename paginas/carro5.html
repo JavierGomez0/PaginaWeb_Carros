@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Comparativa de Vehículos de Lujo</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+      color: #00aaff;
+    }
+
+    .container {
+      display: flex;
+      padding: 20px;
+      gap: 30px;
+    }
+
+    .left {
+      flex: 1;
+      text-align: center;
+    }
+
+    .car-video {
+      width: 100%;
+      max-width: 400px;
+      height: 600px; 
+  object-fit: cover; 
+      border-radius: 10px;
+    }
+
+    .right {
+      flex: 2;
+    }
+
+    .right p {
+      text-align: justify;
+      font-size: 16px;
+    }
+
+    .right a {
+      color: #00aaff;
+      text-decoration: none;
+    }
+
+    .car-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .car-item img {
+      width: 100px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .car-item div {
+      margin-top: 5px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .car-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>  Mercedes-AMG ONE</h1>
+
+  <div class="container">
+
+    <div class="left">
+      <video autoplay muted loop class="car-video">
+        <source src="../video/mercedes.mp4" type="video/mp4">
+        Tu navegador no soporta video.
+      </video>
+    </div>
+
+
+    <div class="right">
+      <p>
+El Mercedes-AMG ONE es la culminación de un ambicioso proyecto: trasladar un tren motriz de Fórmula 1 casi idéntico a un coche de producción legal para la carretera. Concebido como el hiperdeportivo definitivo, fue presentado por primera vez como un concept llamado Project ONE en 2017, pero su desarrollo se extendió hasta 2022 debido a los enormes desafíos de adaptar la compleja tecnología de carreras a las regulaciones de emisiones y ruido para su uso en carretera. El resultado es una máquina sin precedentes, una verdadera proeza de ingeniería automotriz.
+
+En su corazón late el mismo sistema de propulsión híbrido y turbocargado de 1.6 litros V6 que impulsó a Lewis Hamilton a múltiples campeonatos de F1. Este motor de combustión interna, que llega a las 11,000 rpm, trabaja en conjunto con cuatro motores eléctricos dedicados: uno en el cigüeñal (MGU-K), otro en el turbocompresor (MGU-H), y dos motores adicionales impulsando las ruedas delanteras, ofreciendo tracción total con vectorización de par. La potencia combinada del sistema alcanza unos impresionantes 1.063 CV (1.049 hp). El rendimiento que lo acompaña es explosivo: acelera de 0 a 100 km/h en tan solo 2.9 segundos, de 0 a 200 km/h en 7.0 segundos, y de 0 a 300 km/h en 15.6 segundos, con una velocidad máxima limitada electrónicamente a 352 km/h (219 mph).      </p>
+
+      <div class="car-grid">
+        <div class="car-item"><img src="../image/motor.avif " alt="Carro"><div>Motor</div></div>
+        <div class="car-item"><img src="../image/frenos.webp" alt="Carro"><div>Frenos</div></div>
+        <div class="car-item"><img src="../image/llantas.avif" alt="Carro"><div>Aros</div></div>
+        <div class="car-item"><img src="../image/par.jpg" alt="Carro"><div>Par motor</div></div>
+        <div class="car-item"><img src="../image/tramision.jpg" alt="Carro"><div>Transmision</div></div>
+        <div class="car-item"><img src="../image/velocidad.jpg" alt="Carro"><div>Velocimetro</div></div>
+        <div class="car-item"><img src="../image/escape.png" alt="Carro"><div>Escape</div></div>
+        <div class="car-item"><img src="../image/color.png" alt="Carro"><div>Color</div></div>
+        <li><a href="ventas.html" style="color: rgb(0, 242, 255) ;">Regresar</a></li>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
